@@ -10,5 +10,21 @@ class Definition
     @text_id = text_id
     @id = id || @@total_rows += 1
   end
+
+  def ==(definition_to_compare)
+    (self.content() == definition_to_compare.content()) && (self.text_id() == definition_to_compare.text_id())
+  end
+
+  def self.all
+    @@definitions.values
+  end
+
+  def save
+    @@definitions[self.id] = Definition.new(self.content, self.text_id, self.id)
+  end
+
+  def self.clear
+    @@definitions = {}
+  end
 end
 

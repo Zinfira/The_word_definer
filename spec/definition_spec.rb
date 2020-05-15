@@ -7,8 +7,10 @@ describe '#Definition' do
 
   before(:each) do
     Word.clear()
+    Definition.clear()
     @text = Word.new("cat", nil)
     @text.save()
+
   end
 
   describe('#==') do
@@ -18,4 +20,34 @@ describe '#Definition' do
       expect(definition1).to(eq(definition2))
     end
   end
+
+  describe('.all') do
+    it('returns a list of all definitions') do
+      definition1 = Definition.new("it is a pet", @text.id, nil)
+      definition1.save()
+      definition2 = Definition.new("it meows", @text.id, nil)
+      definition2.save()
+      expect(Definition.all).to(eq([definition1, definition2]))
+    end
+  end
+
+  describe('#save') do
+    it('saves a definition') do
+      definition1 = Definition.new("it is a pet", @text.id, nil)
+      definition1.save()
+      expect(Definition.all).to(eq([definition1]))
+    end
+  end
+
+  describe('.clear') do
+    it('clears all definitions') do
+      definition1 = Definition.new("it is a pet", @text.id, nil)
+      definition1.save()
+      definition2 = Definition.new("it meows", @text.id, nil)
+      definition2.save()
+      Definition.clear()
+      expect(Definition.all).to(eq([]))
+    end
+  end
+
 end
