@@ -32,5 +32,9 @@ class Definition
     self.text_id = text_id
     @@definitions[self.id] = Definition.new(self.content, self.text_id, self.id)
   end
+
+  def self.find(id)
+    @@definitions[id]
+  end
 end
 
