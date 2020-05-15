@@ -1,0 +1,12 @@
+<h2>Update <%= @text.text() %></h2>
+
+<form action="/words/<%= @text.id() %>" method="post">
+  <input name="_method" type="hidden" value="patch">
+
+  <label for="new_word">Edit Word</label>
+  <input name="new_word" type="text">
+
+  <button type="submit">Update</button>
+</form>
+
+<p><a href="/words">Return to album list</a></p>

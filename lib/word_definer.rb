@@ -34,7 +34,7 @@ class Word
   end
 
   def update(text)
-    @text = text
+    self.text = text
   end
 
   def delete
