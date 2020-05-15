@@ -47,3 +47,10 @@ patch('/words/:id') do
   @texts = Word.all
   erb(:home)
 end
+
+delete('/words/:id') do
+  @text = Word.find(params[:id].to_i())
+  @text.delete()
+  @texts = Word.all
+  erb(:home)
+end

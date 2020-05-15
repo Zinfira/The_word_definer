@@ -10,3 +10,9 @@
 </form>
 
 <p><a href="/words">Return to album list</a></p>
+
+<form action="/words/<%= @text.id() %>" method="post">
+  <input name="_method" type="hidden" value="delete">
+
+  <button type="submit">Delete Word</button>
+</form>
