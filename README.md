@@ -11,7 +11,10 @@ _This application allows users to enter and define their own words. When word is
 ## Specification
 | Specs | Example Input | Example Output |
 |-------|---------------|----------------|
-
+| Create a new word | "Cat" | "List of words: Cat" |
+| Edit words | Enter "kitten" and click to 'Update' button | "List of words: kitten" |
+| Delete created word from list of words | Press "Delete word" button | "List of words: " |
+| Add definition for words | 
 
 ## Setup/Installation Requirements
 
