@@ -49,7 +49,7 @@ describe ('#Word') do
       word1.save()
       word2 = Word.new("pizza", nil)
       word2.save()
-      expect(Word.find(word1,id)).to(eq(word1))
+      expect(Word.find(word1.id)).to(eq(word1))
     end
   end
 end
