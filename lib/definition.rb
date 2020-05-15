@@ -50,5 +50,10 @@ class Definition
     end
     definitions
   end
+
+ 
+  def word
+    Word.find(self.text_id)
+  end
 end
 
