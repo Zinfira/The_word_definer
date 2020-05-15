@@ -26,5 +26,11 @@ class Definition
   def self.clear
     @@definitions = {}
   end
+
+  def update(content, text_id)
+    self.content = content
+    self.text_id = text_id
+    @@definitions[self.id] = Definition.new(self.content, self.text_id, self.id)
+  end
 end
 
