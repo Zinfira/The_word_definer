@@ -1,0 +1,15 @@
+<h2>Welcome to The Word Definer!</h2>
+<h3>We will help your kids to learn new words and their definitions.</h3>
+
+<% if @texts.any? %>
+  <ul>
+    <% @texts.each do |text| %>
+      <li><a href="/texts/<%= text.id %>"><%= text.text %></a></li>
+  <% end %>
+</ul>
+
+<% else %>
+  <p>There are currently no words to display.</p>
+<% end %>
+
+<a href="words/new">Add a new Word</a>
