@@ -50,4 +50,14 @@ describe '#Definition' do
     end
   end
 
+  describe('#update') do
+    it('updates a definition by id') do
+      definition1 = Definition.new("it is a pet", @text.id, nil)
+      definition1.save()
+      definition1.update("it likes to sleep in warm places", @text.id)
+      expect(definition1.content).to(eq("it likes to sleep in warm places"))
+    end
+  end
+
+
 end
