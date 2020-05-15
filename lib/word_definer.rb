@@ -23,4 +23,10 @@ class Word
   def ==(word_to_compare)
     self.text() == word_to_compare.text()
   end
+
+  def self.clear
+    @@words = {}
+    @@total_words = 0
+  end
+
 end
