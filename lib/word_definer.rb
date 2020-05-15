@@ -33,4 +33,8 @@ class Word
     @@words[id]
   end
 
+  def update(text)
+    @text = text
+  end
+
 end
