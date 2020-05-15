@@ -4,7 +4,7 @@
 <% if @texts.any? %>
   <ul>
     <% @texts.each do |text| %>
-      <li><a href="/texts/<%= text.id %>"><%= text.text %></a></li>
+      <li><a href="/words/<%= text.id %>"><%= text.text %></a></li>
   <% end %>
 </ul>
 
