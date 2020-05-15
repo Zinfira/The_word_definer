@@ -1,6 +1,7 @@
 require 'rspec'
 require 'word_definer'
 require 'pry'
+require 'definition'
 
 describe ('#Word') do
 
