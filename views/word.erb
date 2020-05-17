@@ -4,8 +4,8 @@
 
   <% if @text.definitions.any? %>
     <ol>
-      <% @text.definitons.each do |definition| %>
-        <li><a gref="/words/<%= @text.id %>/definitions/<%= definition.id%>"><%= definition.definition %></a></li>
+      <% @text.definitions.each do |definition| %>
+        <li><a href="/words/<%= @text.id %>/definitions/<%= definition.id %>"><%= definition.content %></a></li>
       <% end %>
     </ol>
   <% else %>

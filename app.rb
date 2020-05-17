@@ -56,6 +56,7 @@ delete('/words/:id') do
   erb(:home)
 end
 
+
 get('/words/:id/definitions/:definition_id') do
   @definition = Definition.find(params[:definition_id].to_i())
   erb(:definition)
@@ -71,7 +72,7 @@ end
 patch('/words/:id/definitions/:definition_id') do
   @text = Word.find(params[:id].to_i())
   definition = Definition.find(params[:definition_id].to_i())
-  definition.update(params[:definition], @text.id)
+  definition.update(params[:content], @text.id)
   erb(:word)
 end
 
