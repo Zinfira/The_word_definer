@@ -14,7 +14,9 @@ _This application allows users to enter and define their own words. When word is
 | Create a new word | "Cat" | "List of words: Cat" |
 | Edit words | Enter "kitten" and click to 'Update' button | "List of words: kitten" |
 | Delete created word from list of words | Press "Delete word" button | "List of words: " |
-| Add definition for words | 
+| Add definition for words | "It is a pet" | "Definitions: 1. It is a pet" |
+| Update definitions | Enter "It meows" and click to 'Update definition' button | "Definitions: It meows" |
+| Delete created definition | Click "Delete definition button" | "Definition: " |
 
 ## Setup/Installation Requirements
 
