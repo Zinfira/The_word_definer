@@ -20,7 +20,7 @@ _This application allows users to enter and define their own words. When word is
 
 ## Setup/Installation Requirements
 
-Try out the app on [Heroku](https://dry-river-24417.herokuapp.com/): 
+Try out the app on [Heroku](https://dry-river-24417.herokuapp.com/)
 
 #### OR ####
 
