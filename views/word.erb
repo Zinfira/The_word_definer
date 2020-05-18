@@ -17,10 +17,12 @@
 <form action="/words/<%= @text.id %>/definitions" method="post">
   <div class="form-group">
     <label for="definition">Definition:</label>
-    <input id="definition" name="definition" class="form-control" type="text">
+    <textarea name="definition" rows="4" cols="40" class="form-control" type="text"></textarea>
   </div>
-  <button type="submit" class="btn">Add a Definition</button>
+  <button type="submit" class="btn btn-success">Add a Definition</button>
 </form>
+<br>
 
 <p><a href="/words/<%= @text.id %>/edit">Edit a Word</a></p>
 <a href="/words">Return to list of Words</a>
+<br>

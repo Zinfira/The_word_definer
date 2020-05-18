@@ -6,7 +6,7 @@
   <label for="new_word">Edit Word</label>
   <input name="new_word" type="text">
 
-  <button type="submit">Update</button>
+  <button type="submit" class="btn btn-info">Update</button>
 </form>
 
 <p><a href="/words">Return to album list</a></p>
@@ -14,5 +14,5 @@
 <form action="/words/<%= @text.id() %>" method="post">
   <input name="_method" type="hidden" value="delete">
 
-  <button type="submit">Delete Word</button>
+  <button type="submit" class="btn btn-danger">Delete Word</button>
 </form>
